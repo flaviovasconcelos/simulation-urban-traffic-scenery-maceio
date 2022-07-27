@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+   
+	<!-- TIPOS DE VEICULOS -->
+	<vType id="taxi" vClass="taxi" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="60" color="255,255,0" minGap="1.25" carFollowModel="Krauss" speedFactor="1.2"/>
+	
+	<!-- ROTAS PARA TAXI FLUXO-->
+	<!-- SENTIDO Centro (Fernandes Lima) Obs.: Todo o Percurso. -->
+	<flow id="6.1000" begin="0" end="5400" vehsPerHour="250" type="taxi" departLane="first" departPos="free" departSpeed="max" from="gneE14" to="775830384" via="853222188#2 190347088#2"/>
+	<!-- SENTIDO Centro (Fernandes Lima) Obs.: Todo o Percurso. Via paralela -->
+	<flow id="6.1001" begin="0" end="5400" vehsPerHour="25" type="taxi" departLane="first" departPos="free" departSpeed="max" from="gneE14" to="775830384" via="53187714#2"/>	
+	
+	
+	<!-- SENTIDO Centro (Fernandes Lima) para Travessa Prof. José da Silveira Camerino -->
+	<flow id="6.1012" begin="0" end="5400" vehsPerHour="40" type="taxi" departLane="first" departPos="free" departSpeed="max" from="gneE14" to="-37061736#7" via="853222188#2 190347088#2"/>
+	<!-- SENTIDO Centro (Fernandes Lima) para Travessa Prof. José da Silveira Camerino pela via Paralela -->
+	<flow id="6.1013" begin="0" end="5400" vehsPerHour="10" type="taxi" departLane="first" departPos="free" departSpeed="max" from="gneE14" to="-37061736#7" via="853222188#2 190347088#2"/>
+	<!-- SENTIDO Centro (Fernandes Lima) para Rua Teófilo de Barros -->
+	<flow id="6.1014" begin="0" end="5400" vehsPerHour="20" type="taxi" departLane="first" departPos="free" departSpeed="max" from="gneE14" to="163041337" via="853222188#2 190347088#2"/>
+	<!-- SENTIDO Centro (Fernandes Lima) para Rua Arsênio Fortes (Retorno Casa Vieira) -->
+	<flow id="6.1015" begin="0" end="5400" vehsPerHour="40" type="taxi" departLane="first" departPos="free" departSpeed="max" from="gneE14" to="47661751#0" via="853222188#2 190347088#2"/>
+	
+	<!-- SENTIDO Centro (Fernandes Lima) para Rua Estatístico Teixeira de Freitas -->
+	<flow id="6.1029" begin="0" end="5400" vehsPerHour="50" type="taxi" departLane="first" departPos="free" departSpeed="max" from="gneE14" to="775830384" via="853222188#2 190347088#2"/>
+	
+	
+	<!-- IDA - RUA CAMARAGIBE para Centro (Fernandes Lima) -->
+	<flow id="6.1041" begin="0" end="5400" vehsPerHour="125" type="taxi" departLane="first" departPos="free" departSpeed="max" from="49030944#2" to="775830384" via="190347088#2"/>
+	<!-- IDA - RUA CAMARAGIBE para Travessa Prof. José da Silveira Camerino -->
+	<flow id="6.1042" begin="0" end="5400" vehsPerHour="20" type="taxi" departLane="first" departPos="free" departSpeed="max" from="49030944#2" to="-37061736#7" via="190347088#2"/>
+	<!-- IDA - RUA CAMARAGIBE para Travessa Prof. José da Silveira Camerino pela via Paralela -->
+	<flow id="6.1043" begin="0" end="5400" vehsPerHour="10" type="taxi" departLane="first" departPos="free" departSpeed="max" from="49030944#2" to="-37061736#7" via="53187714#2"/>
+	<!-- IDA - RUA CAMARAGIBE para Rua Teófilo de Barros -->
+	<flow id="6.1044" begin="0" end="5400" vehsPerHour="10" type="taxi" departLane="first" departPos="free" departSpeed="max" from="49030944#2" to="163041337" via="190347088#2"/>
+	<!-- IDA - RUA CAMARAGIBE para Rua Arsênio Fortes (Retorno Casa Vieira) -->
+	<flow id="6.1045" begin="0" end="5400" vehsPerHour="20" type="taxi" departLane="first" departPos="free" departSpeed="max" from="49030944#2" to="47661751#0" via="190347088#2"/>
+	
+	
+	<!-- IDA - RUA ABELARDO PONTES DE LIMA para Centro (Fernandes Lima) -->
+	<flow id="6.1061" begin="0" end="5400" vehsPerHour="100" type="taxi" departLane="first" departPos="free" departSpeed="max" from="583371595#1" to="775830384"/>
+	<!-- IDA - RUA ABELARDO PONTES DE LIMA para Travessa Prof. José da Silveira Camerino -->
+	<flow id="6.1062" begin="0" end="5400" vehsPerHour="25" type="taxi" departLane="first" departPos="free" departSpeed="max" from="583371595#1" to="-37061736#7"/>
+	<!-- IDA - RUA ABELARDO PONTES DE LIMA para Rua Teófilo de Barros -->
+	<flow id="6.1063" begin="0" end="5400" vehsPerHour="10" type="taxi" departLane="first" departPos="free" departSpeed="max" from="583371595#1" to="163041337"/>
+	<!-- IDA - RUA ABELARDO PONTES DE LIMA para Rua Arsênio Fortes (Retorno Casa Vieira) -->
+	<flow id="6.1064" begin="0" end="5400" vehsPerHour="25" type="taxi" departLane="first" departPos="free" departSpeed="max" from="583371595#1" to="47661751#0"/>
+	<!-- IDA - RUA ABELARDO PONTES DE LIMA para Avenida Comendador Francisco de Amorim Leão (Shopping Farol) -->
+	<flow id="6.1065" begin="0" end="5400" vehsPerHour="15" type="taxi" departLane="first" departPos="free" departSpeed="max" from="583371595#1" to="199263543"/>
+	
+	
+		
+	<!-- IDA - RUA TEREZA DE AZEVEDO para Avenida Fernandes Lima (total) -->
+	<flow id="6.1081" begin="0" end="5400" vehsPerHour="50" type="taxi" departLane="first" departPos="free" departSpeed="max" from="199263544" to="775830384"/>
+	<!-- IDA - RUA TEREZA DE AZEVEDO para Tabuleiro (Fernandes Lima) -->
+	<flow id="7.1082" begin="0" end="5400" vehsPerHour="50" type="taxi" departLane="best" departPos="free" departSpeed="max" from="199263544" to="47663822#2.31" via="286346393#2 286346393#4 286346393#6"/>
+	<!-- IDA - RUA TEREZA DE AZEVEDO para RUA TEREZA DE AZEVEDO -->
+	<flow id="7.1083" begin="0" end="5400" vehsPerHour="50" type="taxi" departLane="best" departPos="free" departSpeed="max" from="199263544" to="53292659#0"/>
+	
+	
+	<!-- IDA - AVENIDA COMENDADOR FRANCISCO DE AMORIM LEÃO (Shopping Farol) para Avenida Fernandes Lima (total) -->
+	<flow id="6.1091" begin="0" end="5400" vehsPerHour="25" type="taxi" departLane="first" departPos="free" departSpeed="max" from="--199263543" to="775830384"/>
+	
+	
+	<!-- IDA - AVENIDA ROTARY para Avenida Fernandes Lima (total)  -->
+	<flow id="6.1100" begin="0" end="5400" vehsPerHour="75" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="775830384"/>		
+	<!-- IDA - AVENIDA ROTARY para Rua Luiz Rizzo  -->
+	<flow id="6.1101" begin="0" end="5400" vehsPerHour="25" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="53292419"/>
+	<!-- IDA - AVENIDA ROTARY para Rua Antônio Procópio  -->
+	<flow id="6.1102" begin="0" end="5400" vehsPerHour="10" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="53292418"/>
+	<!-- IDA - AVENIDA ROTARY para Rua Pedro Oliveira Rocha  -->
+	<flow id="6.1103" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="-53292327"/>	
+	<!-- IDA - AVENIDA ROTARY para Rua Tavares Bastos -->
+	<flow id="6.1104" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="-53292327"/>
+	<!-- IDA - AVENIDA ROTARY para para Rua Clarêncio Jucá  -->
+	<flow id="6.1105" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="-49049137"/>	
+	<!-- IDA - AVENIDA ROTARY para Alameda São Benedito -->
+	<flow id="6.1106" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="48484826"/>
+	<!-- IDA - AVENIDA ROTARY para Rua Estatístico Teixeira de Freitas -->
+	<flow id="6.1107" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="49049126"/>
+	<!-- IDA - AVENIDA ROTARY para Rua Miguel Palmeira -->
+	<flow id="6.1108" begin="0" end="5400" vehsPerHour="15" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="53283046#0"/>
+	<!-- IDA - AVENIDA ROTARY para Rua Barão José Miguel -->
+	<flow id="6.1109" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="gneE5"/>
+	<!-- IDA - AVENIDA ROTARY para Rua Industrial Luiz Calheiros Júnior -->
+	<flow id="6.1110" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="50172050#0"/>
+	<!-- IDA - AVENIDA ROTARY para Rua Dr. José de A. Porciúncula -->
+	<flow id="6.1111" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="53281792"/>
+	<!-- IDA - AVENIDA ROTARY para Rua José de Alencar -->
+	<flow id="6.1112" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="28639939#0"/>
+	<!-- IDA - AVENIDA ROTARY para Rua Rua Frei Caneca -->
+	<flow id="6.1113" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="-292382413"/>
+	<!-- IDA - AVENIDA ROTARY para Rua Íris Alagoense -->
+	<flow id="6.1114" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="37022128"/>
+	<!-- IDA - AVENIDA ROTARY para Tabuleiro -->
+	<flow id="6.1115" begin="0" end="5400" vehsPerHour="15" type="taxi" departLane="first" departPos="free" departSpeed="max" from="240384794" to="47663822#2.31" via="286346393#2 286346393#4 286346393#6"/>
+	
+	
+	<!-- IDA - RUA PROF. JOSE DA SILVEIRA CAMERINO para Avenida Fernandes Lima (total)  -->
+	<flow id="6.1117" begin="0" end="5400" vehsPerHour="20" type="taxi" departLane="first" departPos="free" departSpeed="max" from="447568492#1" to="775830384"/>
+	
+	
+	<!-- IDA - RUA CEL LIMA ROCHA para Avenida Fernandes Lima (total)  -->
+	<flow id="6.1121" begin="0" end="5400" vehsPerHour="75" type="taxi" departLane="first" departPos="free" departSpeed="max" from="48484828#4" to="775830384"/>
+	<!-- IDA - RUA CEL LIMA ROCHA para Coronel Lima Rocha  -->
+	<flow id="7.1122" begin="0" end="5400" vehsPerHour="15" type="taxi" departLane="best" departPos="free" departSpeed="max" from="48484828#4" to="48484723"/>
+	<!-- IDA - RUA CEL LIMA ROCHA para Tabuleiro (Fernandes Lima)  -->
+	<flow id="7.1123" begin="0" end="5400" vehsPerHour="25" type="taxi" departLane="best" departPos="free" departSpeed="max" from="48484828#4" to="47663822#2.31" via="286346393#2 286346393#4 286346393#6"/>
+	<!-- IDA - RUA CEL LIMA ROCHA para Rua Barão José Miguel -->
+	<flow id="6.1124" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="48484828#4" to="gneE5"/>
+	<!-- IDA - RUA CEL LIMA ROCHA para Rua Industrial Luiz Calheiros Júnior -->
+	<flow id="6.1125" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="48484828#4" to="50172050#0"/>
+	
+	<!-- IDA - RUA MIGUEL PALMEIRA para Avenida Fernandes Lima (total)  -->
+	<flow id="6.1131" begin="0" end="5400" vehsPerHour="50" type="taxi" departLane="first" departPos="free" departSpeed="max" from="192483968#1" to="775830384"/>
+	<!-- IDA - RUA MIGUEL PALMEIRA para Rua Miguel Palmeira -->
+	<flow id="7.1132" begin="0" end="5400" vehsPerHour="25" type="taxi" departLane="best" departPos="free" departSpeed="max" from="192483968#1" to="53283046#0"/>
+	<!-- IDA - RUA MIGUEL PALMEIRA para Tabuleiro (Fernandes Lima) -->
+	<flow id="7.1133" begin="0" end="5400" vehsPerHour="25" type="taxi" departLane="first" departPos="free" departSpeed="max" from="192483968#1" to="47663822#2.31" via="286346393#2 286346393#4 286346393#6"/>
+	
+	<!-- IDA - RUA OLDEMBURGO PARANHOS para Avenida Fernandes Lima (total)  -->
+	<flow id="6.1138" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="252220162" to="775830384"/>
+	
+	<!-- IDA - RUA PROFESSOR GUEDES DE MIRANDA para Avenida Fernandes Lima (total)  -->
+	<flow id="6.1141" begin="0" end="5400" vehsPerHour="25" type="taxi" departLane="first" departPos="free" departSpeed="max" from="48484721#2" to="775830384"/>	
+	<!-- IDA - RUA PROFESSOR GUEDES DE MIRANDA para Tabuleiro (Fernandes Lima) -->
+	<flow id="6.1142" begin="0" end="5400" vehsPerHour="25" type="taxi" departLane="free" departPos="free" departSpeed="max" from="48484721#2" to="47663822#2.31" via="286346393#2 286346393#4 286346393#6"/>
+	
+	
+	<!-- IDA - RUA DESEMBARGADOR TENORIO para Avenida Fernandes Lima (total)  -->
+	<flow id="6.1161" begin="0" end="5400" vehsPerHour="50" type="taxi" departLane="first" departPos="free" departSpeed="max" from="53281545#2" to="775830384"/>
+	<!-- IDA - RUA DESEMBARGADOR TENORIO para Rua José de Alencar -->
+	<flow id="6.1162" begin="0" end="5400" vehsPerHour="25" type="taxi" departLane="first" departPos="free" departSpeed="max" from="53281545#2" to="28639939#0"/>
+	<!-- IDA - RUA DESEMBARGADOR TENORIO para Rua Frei Caneca -->
+	<flow id="6.1163" begin="0" end="5400" vehsPerHour="15" type="taxi" departLane="first" departPos="free" departSpeed="max" from="53281545#2" to="-292382413"/>
+	<!-- IDA - RUA DESEMBARGADOR TENORIO para Rua Iris Alagoense -->
+	<flow id="6.1164" begin="0" end="5400" vehsPerHour="15" type="taxi" departLane="first" departPos="free" departSpeed="max" from="53281545#2" to="37022128"/>
+	
+	
+	
+	<!-- VOLTA SENTIDO Gruta (Fernandes Lima) Obs.: Todo o Percurso. -->
+	<flow id="7.1021" begin="0" end="5400" vehsPerHour="100" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="47663822#2.31" via="286346393#2 286346393#4 286346393#6"/>
+	
+	<!-- VOLTA Fernandes Lima Centenário para Gruta Fernandes Lima Obs.: Todo o Percurso. -->
+	<flow id="7.1171" begin="0" end="5400" vehsPerHour="75" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="47663822#2.31" via="286346393#2 286346393#4 286346393#6"/>
+	<!-- VOLTA Fernandes Lima Centenário para Rua Cel Lima Rocha -->
+	<flow id="7.1172" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="48484723"/>
+	<!-- VOLTA Fernandes Lima Centenário para Rua Cel Murilo Otavio de Barros -->
+	<flow id="7.1173" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="52708535#0"/>
+	<!-- VOLTA Fernandes Lima Centenário para Rua João Correia de Araujo (Retorno ROTARY) -->
+	<flow id="7.1174" begin="0" end="5400" vehsPerHour="15" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="48484834"/>	
+	<!-- VOLTA Fernandes Lima Centenário para Rua Tereza de Azevedo -->
+	<flow id="7.1175" begin="0" end="5400" vehsPerHour="15" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="53292659#0"/>
+	<!-- VOLTA Fernandes Lima Centenário para Rua Roberto Símonsen -->
+	<flow id="7.1176" begin="0" end="5400" vehsPerHour="1" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="48484858#0"/>
+	<!-- VOLTA Fernandes Lima Centenário para Rua Prof Francisco Cândido de Mendonça -->
+	<flow id="7.1177" begin="0" end="5400" vehsPerHour="1" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="252220826"/>
+	<!-- VOLTA Fernandes Lima Centenário para Rua Hugo Corrêa Paes -->
+	<flow id="7.1178" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="252220824"/>	
+	<!-- VOLTA Fernandes Lima Centenário para Rua Ariosvaldo Pereira Cintra -->
+	<flow id="7.1179" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="48484860#0"/>
+	<!-- VOLTA Fernandes Lima Centenário para Rua Desembargador Barreto Cardoso -->
+	<flow id="7.1180" begin="0" end="5400" vehsPerHour="1" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="-678477995"/>	
+	<!-- VOLTA Fernandes Lima Centenário para Rua Artur Vital da Silva -->
+	<flow id="7.1181" begin="0" end="5400" vehsPerHour="1" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="37061722"/>	
+	<!-- VOLTA Fernandes Lima Centenário para Rua Big Bompreço Gruta -->
+	<flow id="7.1182" begin="0" end="5400" vehsPerHour="10" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="gneE4"/>			
+	<!-- VOLTA Fernandes Lima Centenário para Avenida Pau Brasil (Ao Lado do Extra) -->
+	<flow id="7.1183" begin="0" end="5400" vehsPerHour="1" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="47826546"/>
+	<!-- VOLTA Fernandes Lima Centenário para Rua Camaragibe -->
+	<flow id="7.1184" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="408074469#0" to="-49030944#2"/>
+	
+	
+	<!-- VOLTA Rua Oldemburgo da Silva Paranhos para Gruta Fernandes Lima -->
+	<flow id="7.1191" begin="0" end="5400" vehsPerHour="10" type="taxi" departLane="first" departPos="free" departSpeed="max" from="49070929#0" to="47663822#2.31" via="286346393#2 286346393#4 286346393#6"/>	
+	<!-- VOLTA Rua Oldemburgo da Silva Paranhos para Rua Cel Lima Rocha -->
+	<flow id="7.1192" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="49070929#0" to="48484723"/>
+	
+	<!-- VOLTA Rua Ministro Salgado Filho para Gruta Fernandes Lima -->
+	<flow id="7.1201" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="48484724" to="47663822#2.31" via="286346393#2 286346393#4 286346393#6"/>
+	
+	<!-- VOLTA Rua Cel Francisco Silva para Gruta Fernandes Lima -->
+	<flow id="7.1211" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="-48484730#0" to="47663822#2.31" via="286346393#2 286346393#4 286346393#6"/>
+	
+	<!-- VOLTA Rua Dr Alfredo Oiticica para Gruta Fernandes Lima -->
+	<flow id="7.1221" begin="0" end="5400" vehsPerHour="5" type="taxi" departLane="first" departPos="free" departSpeed="max" from="-48484728" to="47663822#2.31" via="286346393#2 286346393#4 286346393#6"/>
+</routes>

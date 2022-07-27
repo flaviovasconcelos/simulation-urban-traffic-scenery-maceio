@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+   
+    <!-- TIPOS DE VEICULOS -->
+	<vType id="bus" vClass="bus" maxSpeed="60" color="255,0,0" minGap="2.3" carFollowModel="Krauss" speedFactor="1.2"/>
+		
+	<!-- ROTAS DOS ÔNIBUS --> <!-- HORÁRIO 6H ÀS 6H59m -->	
+	<!-- 
+	Linha 012 - José da Silva Peixoto - Centro 
+	Horários: 06:00
+    Sentido: IDA - Rua Desembargador Tenório - Centro (Fernandes Lima)
+	-->
+	<flow id="2.50" begin="0" end="5400" vehsPerHour="1" type="bus" departLane="best" from="53281545#2" to="775830384">
+		<stop busStop="busStop_775830384_0_37" duration="15"/>
+	</flow>
+	
+	<!--
+	Linha 024 - Gruta - Centro via Sanatório
+	Horários: 06:00 - 06:45
+	Sentido: IDA - Tereza de azevedo para Tereza de azevedo (Atravesando a Fernandes Lima)
+	-->
+	<flow id="2.100" begin="0" end="5400" vehsPerHour="2" type="bus" departLane="best" from="199263544" to="53292659#0"/>
+	
+	<!--
+	Linha 027 - Vila Saem - Centro
+	Horário: 06:00 			 	
+	Sentido: IDA - Rua Coronel Lima Rocha para Rua Coronel Lima Rocha (Atravessando a Fernandes Lima) (Não tem ponto).
+				   Rua Miguel Palmeira para Rua Barão José Miguel (Sentido Centro).
+	               Rua José de Alencar para Centro (Fernandes Lima)
+	-->
+	<flow id="2.150" begin="0" end="5400" vehsPerHour="1" type="bus" departLane="best" from="48484828#4" to="48484723"/>
+	<flow id="2.200" begin="0" end="5400" vehsPerHour="1" type="bus" departLane="best" from="192483968#1" to="gneE5">	
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+	</flow>
+	<flow id="2.250" begin="0" end="5400" vehsPerHour="1" type="bus" departLane="best" from="-28639939#0" to="775830384">	
+		<stop busStop="busStop_775830384_0_37" duration="15"/>	<!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<!--
+			VOLTA - Centro (Fernandes Lima) para Rua Comendador Firmo Lopes. (Não tem ponto)
+					Rua Desembargador Tenório para Rua José de Alencar. (Não tem ponto)
+					Rua Prof. Guedes de Miranda para Rua Cel Francisco Silva. 
+					Rua Miguel Palmeira para Rua Miguel Palmeira. (Não tem ponto)
+	-->
+	<flow id="3.300" begin="0" end="5400" vehsPerHour="1" type="bus" departLane="best" from="408074469#0" to="53281543"/> 
+	<flow id="2.350" begin="0" end="5400" vehsPerHour="1" type="bus" departLane="best" from="53281545#2" to="28639939#0"/>
+	<flow id="3.400" begin="0" end="5400" vehsPerHour="1" type="bus" departLane="best" from="48484721#2" to="48484730#0">
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->
+	</flow>
+	<flow id="3.450" begin="0" end="5400" vehsPerHour="1" type="bus" departLane="best" from="192483968#1" to="53283046#0"/>
+		
+	<!--
+	Linha 037 - Salvador Lyra - Centro 
+	Horários: 06:00 - 06:20 - 06:35 - 06:50 
+ 	Sentido: IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+			 VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso. 
+	-->	
+	<flow id="2.500" begin="150" end="5400" vehsPerHour="4" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.550" begin="150" end="5400" vehsPerHour="4" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->
+	</flow>
+	
+	<!--	
+	Linha 041 - Feitosa - Centro
+	Horários: 06:00 - 06:30 
+	Sentido: IDA - Rua Desembargador Tenório para Centro (Fernandes Lima).
+	-->
+	<flow id="2.600" begin="150" end="5400" vehsPerHour="3" type="bus" departLane="best" from="53281545#2" to="775830384">
+		<stop busStop="busStop_775830384_0_37" duration="15"/>
+	</flow>
+	
+	<!--
+	Linha 042 - Benedito Bentes - Centro (ANALISAR MELHOR A LINHA)
+	Horários: 06:00 - 06:10 - 06:20 - 06:30 - 06:40 - 06:50
+	Sentido: IDA - Centro (Fernandes Lima) para para Rua João Correia de Araújo (Rua do Retorno Rotary). (ERRADO)
+				   Avenida Mendonça Júnior (Rotary) para XXXXXX.
+				   XXXXXXXX para Avenida Aryosvaldo Pereira Cintra para 
+				   Rua Doutor Abelardo Pontes de Lima para Rua Arsênio Fortes.
+				   Rua Tereza Azevedo para XXXXXXXXXXX
+				   XXXXXXXXXXXX para Gruta (Fernandes Lima)
+			 VOLTA - Gruta (Fernandes Lima) para para Centro (Fernandes Lima) (VERIFICAR A ROTA)	(ERRADO)
+			 
+			IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+			VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+		
+	<flow id="2.650" begin="150" end="5400" vehsPerHour="3" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.700" begin="150" end="5400" vehsPerHour="3" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->
+	</flow>
+	
+	<!--
+	Linha 046 - Village Campestre - Centro 
+	Horários: 06:00 - 06:25 - 06:50 
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->		
+	<flow id="2.750" begin="300" end="5400" vehsPerHour="3" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.800" begin="300" end="5400" vehsPerHour="3" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->
+	</flow>
+		
+	<!--
+	Linha 049 - Eustáquio Gomes - Cento 
+	Horários: 06:00 - 06:30 
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<flow id="2.850" begin="300" end="5400" vehsPerHour="2" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.900" begin="300" end="5400" vehsPerHour="2" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->
+	</flow>
+	
+	<!--
+	Linha 053 - Graciliano Ramos - Village II - Centro
+	Horários: 06:00 - 06:15 - 06:30 - 06:45 
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<flow id="2.950" begin="300" end="5400" vehsPerHour="4" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.1000" begin="300" end="5400" vehsPerHour="4" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->
+	</flow>
+		
+	<!--
+	Linha 056 - João Sampaio - Centro
+	Horários: 06:00 - 06:30 
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->	
+	<flow id="2.1050" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.1100" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->
+	</flow>
+	
+	<!--
+	Linha 068 - Colina - Centro via Praça da Faculdade.
+	Horários: 06:00
+	IDA - Avenida Comendador Francisco Amorim Leão para Centro (Fernandes Lima)
+	VOLTA - Centro (Fernandes Lima) para Rua João Correia de Araújo (Rua do Retorno Rotary).
+			Avenida Mendonça Júnior (Rotary) para Rua Luiz Rizzo (SEM PONTO)
+	-->
+	<flow id="2.1150" begin="600" end="5400" vehsPerHour="3" type="bus" departLane="best" from="--199263543" to="775830384">
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>	
+	<flow id="3.1200" begin="600" end="5400" vehsPerHour="3" type="bus" departLane="best" from="408074469#0" to="48484834">		
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+	</flow>
+	<flow id="2.1250" begin="600" end="5400" vehsPerHour="3" type="bus" departLane="best" from="240384794" to="53292419"/>
+	
+	<!--
+	Linha 108 - Clima Bom - Via Colina - Trapiche (Corrigido no aplicativo Cittamobi)
+	Horários: 06:00 - 06:30 
+	IDA - Rua Prof. José da Silveira Camerino para Rua Íris Alagoense
+	VOLTA - Centro (Fernandes Lima) para Rua João Correia de Araújo (Rua do Retorno Rotary).
+			Avenida Mendonça Júnior (Rotary) para Rua Luiz Rizzo (NAO TEM PONTO).
+	-->
+	<flow id="2.1300" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="447568492#1" to="37022128">	
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+	</flow>		
+	<flow id="3.1350" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="408074469#0" to="48484834">		
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+	</flow>		
+	<flow id="2.1400" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="240384794" to="53292419"/>
+	
+	
+	<!--
+	Linha 214 - Henrique Equelman - Vergel 
+	Horários: 06:00 - 06:40 
+	IDA - Rua Dr. Abelardo Pontes Lima para Centro (Fernandes Lima).
+	VOLTA - Centro (Fernandes Lima) para Rua Artur Vital da Silva.
+	-->
+	<flow id="2.1450" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="583371595#1" to="775830384">	
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.1500" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="408074469#0" to="37061722">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+	</flow>
+	
+	<!--
+	Linha 607 - Eustáquio Gomes - Iguatemi 
+	Horários: 06:00 - 06:15 - 06:30 - 06:45
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<flow id="2.1550" begin="600" end="5400" vehsPerHour="4" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.1600" begin="600" end="5400" vehsPerHour="4" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->					
+	</flow>
+	
+	<!--
+	Linha 618 - Gruta - Cruz das Almas via Ponta Verde
+	Horários: 06:00 - 06:30 
+	IDA - Avenida Mendonça Júnior (Rotary) para Rua Luiz Rizzo (SEM PONTO).
+	      Travessa Prof. José da Silveira Camerino para Centro (Fernandes Lima).
+	VOLTA - Centro (Fernandes Lima) para Avenida Ariosvaldo Pereira Cintra.
+			Rua Dr. Abelardo Pontes Lima para Travessa Prof. José da Silveira Camerino. 
+	-->
+	<flow id="2.1650" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="240384794" to="53292419"/>
+	<flow id="2.1700" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="37061736#7" to="775830384">	
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->	
+	</flow>
+	<flow id="3.1750" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="408074469#0" to="48484860#0">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+	</flow>
+	<flow id="2.1800" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="583371595#1" to="-37061736#7">
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+	</flow>
+		
+	<!--
+	Linha 700 - Gruta - Ponta Verde via Muniz Falcão
+	Horários: 06:00 - 06:40 
+	IDA - Rua Tereza de azevedo para Rua Tereza de azevedo (Atravesando a Fernandes Lima) (SEM PONTO).
+	VOLTA - Avenida Mendonça Júnior (Rotary) para Rua Luiz Rizzo (SEM PONTO).
+	-->
+	<flow id="3.1850" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="199263544" to="53292659#0"/>
+	<flow id="2.1900" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="240384794" to="53292419"/>
+	
+	<!--
+	Linha 407 - Trapiche - Hospital Usineiro
+	Horários: 06:00 - 06:45
+	IDA - Rua Roberto Simonsen para Rua Artur Vital da Silva.	       
+	VOLTA - Rua Dr. Abelardo Pontes Lima para Rua Arsênio Fortes.
+			Rua Tereza de azevedo para Rua Tereza de azevedo (Atravesando a Fernandes Lima) (SEM PONTO).
+	-->
+	<flow id="3.1950" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="-48484858#0" to="37061722">
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+	</flow>	
+	<flow id="2.2000" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="583371595#1" to="47661751#0">
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+	</flow>
+	<flow id="3.2050" begin="600" end="5400" vehsPerHour="2" type="bus" departLane="best" from="199263544" to="53292659#0"/>
+	
+	<!--
+	Linha 704 - B. Bentes - Ponta Verde
+	Horários: 06:00 - 06:05 - 06:10 - 06:15 - 06:20 - 06:25 - 06:30 - 06:35 - 06:40 - 06:45 - 06:50 
+	IDA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<flow id="2.2100" begin="900" end="5400" vehsPerHour="11" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->					
+	</flow>	
+	<flow id="3.2150" begin="900" end="5400" vehsPerHour="11" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	
+	<!--
+	Linha 706 - Eustáquio Gomes - Ponta Verde via jacintinho - via UFAL
+	Horários: 06:00 - 06:30 
+	IDA - Rua Dr. Abelardo Pontes Lima para Gruta (Fernandes Lima).
+	-->
+	<flow id="2.2200" begin="900" end="5400" vehsPerHour="2" type="bus" departLane="best" from="583371595#1" to="775830384">	
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	
+	<!--
+	Linha 710 - Chã da Jaqueira - Ponta Verde - Boa Vista
+	Horários: 06:00 - 06:15 - 06:30 - 06:45 
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<flow id="2.2250" begin="900" end="5400" vehsPerHour="2" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.2300" begin="900" end="5400" vehsPerHour="2" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->					
+	</flow>	
+	
+	<!--
+	Linha 715 - Rio Novo - Rosane Collor - Ponta Verde
+	Horários: 06:00 - 06:20 
+	IDA - Rua Prof. José da Silveira Camerino para Rua Íris Alagoense.
+	VOLTA - Centro (Fernandes Lima) para Rua João Correia de Araújo (Rua do Retorno Rotary).
+			Avenida Mendonça Júnior (Rotary) para Rua Luiz Rizzo.
+	-->
+	<flow id="2.2350" begin="900" end="5400" vehsPerHour="1" type="bus" departLane="best" from="447568492#1" to="37022128">	
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+	</flow>
+	<flow id="3.2400" begin="900" end="5400" vehsPerHour="2" type="bus" departLane="best" from="408074469#0" to="48484834">		
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->			
+	</flow>			
+	<flow id="2.2450" begin="900" end="5400" vehsPerHour="2" type="bus" departLane="best" from="240384794" to="53292419"/>
+				
+	<!--		
+	Linha 716 - Clima Bom - Ponta Verde 
+	Horários: 06:00 - 06:12 - 06:24 - 06:36 - 06:48
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<flow id="2.2500" begin="900" end="5400" vehsPerHour="5" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.2550" begin="900" end="5400" vehsPerHour="5" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->					
+	</flow>	
+			
+	<!--
+	Linha 602 - Salvador Lyra - Iguatemi
+	Horários: 06:05 - 06:15 - 06:25 - 06:35 - 06:45 - 06:55 
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<flow id="2.2600" begin="900" end="5400" vehsPerHour="6" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.2650" begin="900" end="5400" vehsPerHour="6" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->					
+	</flow>
+	
+	<!--
+	Linha 604 - Eustaquio Gomes - Term. Cruz das Almas 
+	Horários:  06:05 - 06:15 - 06:25 - 06:35 - 06:45 
+	IDA - Gruta (Fernandes Lima) para Avenida Comendador Francisco Amorim Leão.
+	      Tereza de azevedo para Tereza de azevedo (Atravesando a Fernandes Lima) (SEM PONTO).
+	VOLTA - Rua Roberto Simonsen para Gruta (Fernandes Lima).
+	-->
+	<flow id="2.2700" begin="1200" end="5400" vehsPerHour="5" type="bus" departLane="best" from="gneE14" to="199263543">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+	</flow>
+	<flow id="3.2750" begin="1200" end="5400" vehsPerHour="5" type="bus" departLane="best" from="199263544" to="53292659#0"/>
+	<flow id="3.2800" begin="1200" end="5400" vehsPerHour="5" type="bus" departLane="best" from="-48484858#0" to="47663822#2.31">
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->				
+	</flow>
+	
+	<!-- 
+	Linha 606 - José Tenório - Iguatemi via Gruta
+	Horários: 06:05 - 06:40
+	IDA - Rua Dr. Abelardo Pontes Lima para Centro (Fernandes Lima).       
+	VOLTA - Centro (Fernandes Lima) para Rua Artur Vital da Silva.
+	-->
+	<flow id="2.2850" begin="1200" end="5400" vehsPerHour="2" type="bus" departLane="best" from="583371595#1" to="775830384">	
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.2900" begin="1200" end="5400" vehsPerHour="2" type="bus" departLane="best" from="408074469#0" to="37061722">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->
+	</flow>	
+	
+	<!--
+	Linha 606 - José Tenório - Iguatemi via Rotary
+	Horários:  06:05 - 06:40 
+	IDA - Avenida Mendonça Júnior (Rotary) para Centro (Fernandes Lima).      
+	VOLTA - Centro (Fernandes Lima) para Rua João Correia de Araújo (Rua do Retorno Rotary).
+	-->
+	<flow id="2.2950" begin="1200" end="5400" vehsPerHour="2" type="bus" departLane="best" from="240384794" to="775830384">
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.3000" begin="1200" end="5400" vehsPerHour="2" type="bus" departLane="best" from="408074469#0" to="48484834">		
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->			
+	</flow>
+	
+	<!--
+	Linha 703 - B. Bentes - P. Verde - Gruta via Alto da Alegria - H. Equelman (CORRIGIDO MOOVIT)
+	Horários: 06:05 - 06:15 - 06:25 - 06:35 - 06:45 - 06:55 
+	IDA - Rua Camaragibe para Centro (Fernandes Lima) 
+	VOLTA - Centro (Fernandes Lima) para Rua Artur Vital da Silva
+	-->
+	<flow id="2.3050" begin="1200" end="5400" vehsPerHour="6" type="bus" departLane="best" from="49030944#2" to="775830384">
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.3100" begin="1200" end="5400" vehsPerHour="6" type="bus" departLane="best" from="408074469#0" to="37061722">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->
+	</flow>
+	<!--
+	Linha 033 - José Tenório - Centro via Gruta
+	Horários: 06:05 - 06:25 - 06:45 
+	Sentido: IDA - Rua Dr. Abelardo Pontes Lima para Centro (Fernandes Lima)
+			 VOLTA - Centro (Fernandes Lima) para Rua Artur Vital da Silva
+	-->
+	<flow id="2.3150" begin="1200" end="5400" vehsPerHour="3" type="bus" departLane="best" from="583371595#1" to="775830384">	
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.3200" begin="1200" end="5400" vehsPerHour="3" type="bus" departLane="best" from="408074469#0" to="37061722">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->
+	</flow>
+	
+	<!--
+	Linha 033 - José Tenório - Centro via Rotary
+	Horários: 06:05 - 06:25 - 06:45 
+	Sentido: IDA - Avenida Mendonça Júnior (Rotary) para Centro (Fernandes Lima)
+		     VOLTA - Centro (Fernandes Lima) para Rua João Correia de Araújo (Rua do Retorno Rotary).
+	-->
+	<flow id="2.3250" begin="1200" end="5400" vehsPerHour="3" type="bus" departLane="best" from="240384794" to="775830384">
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.3300" begin="1200" end="5400" vehsPerHour="3" type="bus" departLane="best" from="408074469#0" to="48484834">		
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->			
+	</flow>
+	
+	
+	<!--
+	Linha 201 - Circular 1 	(Corrigido no aplicativo Cittamobi)
+	Horários: 06:10 - 06:45 
+	IDA - Centro (Fernandes Lima) para para Rua João Correia de Araújo (Rua do Retorno Rotary).
+	      Avenida Mendonça Júnior (Rotary) para Rua Luiz Rizzo (SEM PONTO).
+	      Rua Tereza Azevedo para Rua Artur Vital da Silva.
+	VOLTA - Rua Camaragibe para Centro (Fernandes Lima).
+	-->
+	<flow id="3.3350" begin="1500" end="5400" vehsPerHour="2" type="bus" departLane="best" from="408074469#0" to="48484834">		
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+	</flow>					
+	<flow id="2.3400" begin="1500" end="5400" vehsPerHour="2" type="bus" departLane="best" from="240384794" to="53292419"/>		
+	<flow id="3.3450" begin="1500" end="5400" vehsPerHour="2" type="bus" departLane="best" from="199263544" to="37061722">
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+	</flow>
+	<flow id="2.3500" begin="1500" end="5400" vehsPerHour="2" type="bus" departLane="best" from="49030944#2" to="775830384">
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	
+	<!--
+	Linha 022 - São Jorge Centro via Farol
+	Horários: 06:10 - 06:20 - 06:50 
+	Sentido: IDA - Centro (Fernandes Lima) para Rua João Correia de Araújo (Rua do Retorno Rotary).
+			 VOLTA - Avenida Mendonça Júnior (Rotary) para Centro (Fernandes Lima).
+	-->	
+	<flow id="3.3550" begin="1500" end="5400" vehsPerHour="3" type="bus" departLane="best" from="408074469#0" to="48484834">		
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->			
+	</flow>
+	<flow id="2.5400" begin="1500" end="5400" vehsPerHour="3" type="bus" departLane="best" from="240384794" to="775830384">
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	
+	<!--
+	Linha 709 - Chã da Jaqueira - Ponta Verde - Mutirão
+	Horários: 06:10 - 06:40 
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<flow id="2.3650" begin="1500" end="5400" vehsPerHour="2" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.3700" begin="1500" end="5400" vehsPerHour="2" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->					
+	</flow>	
+	
+	<!--
+	Linha 712 - Santos Dumont - Ponta Verde
+	Horários: 06:10 - 06:30 - 06:55
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<flow id="2.3750" begin="1500" end="5400" vehsPerHour="3" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.3800" begin="1500" end="5400" vehsPerHour="3" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->					
+	</flow>	
+	
+	<!--
+	Linha 717 - Village II - Ponta Verde - via Josefa de Melo
+	Horários: 06:10 - 06:35
+	VOLTA - Rua Dr. Abelardo Pontes Lima para Gruta (Fernandes Lima).
+	-->
+	<flow id="2.3850" begin="1500" end="5400" vehsPerHour="2" type="bus" departLane="best" from="583371595#1" to="47663822#2.31">	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->
+	</flow>
+	
+	
+	<!--
+	Linha 057 - Rio Novo - Centro via Farol
+	Horários: 06:15 - 06:40 
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->	
+	<flow id="2.3900" begin="1500" end="5400" vehsPerHour="2" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.3950" begin="1500" end="5400" vehsPerHour="2" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->
+	</flow>	
+	
+	<!--
+	Linha 065 - Rosane Collor - Centro
+	Horários: 06:15 - 06:30 - 06:45 
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->	
+	<flow id="2.4000" begin="1800" end="5400" vehsPerHour="3" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.4050" begin="1800" end="5400" vehsPerHour="3" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->
+	</flow>
+		
+	<!--	
+	Linha 069 - Clima Bom - Centro
+	Horários: 06:15 - 06:35 - 06:55
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<flow id="2.4100" begin="1800" end="5400" vehsPerHour="3" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.4150" begin="1800" end="5400" vehsPerHour="3" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->
+	</flow>
+	
+	<!--
+	Linha 711 - UFAL - Ponta Verde		(CORRIGIDO MOOVIT)
+	Horários: 06:15 - 06:50
+	IDA - Rua Prof. José da Silveira Camerino para Centro (Fernandes Lima)
+	VOLTA - Rua Dr. Albino Magalhães para Rua João Correia de Araújo (Rua do Retorno Rotary).
+			Avenida Mendonça Júnior (Rotary) para Rua Luiz Rizzo (SEM PONTO).	
+	-->
+	<flow id="2.4200" begin="1800" end="5400" vehsPerHour="2" type="bus" departLane="best" from="447568492#1" to="775830384">	
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.4250" begin="1800" end="5400" vehsPerHour="2" type="bus" departLane="best" from="37055971" to="48484834">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+	</flow>
+	<flow id="2.4300" begin="1800" end="5400" vehsPerHour="2" type="bus" departLane="best" from="240384794" to="53292419"/>
+	
+	<!--
+	Linha 906 - Pontal - UFAL (Vergel - Centro) 
+	Horários: 06:15 - 06:35 - 06:55
+	IDA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<flow id="3.4350" begin="2100" end="5400" vehsPerHour="3" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->					
+	</flow>	
+	<flow id="2.4400" begin="2100" end="5400" vehsPerHour="3" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+		
+	
+	<!--
+	Linha 202 - Circular 2
+	Horários: 06:20 - 06:50
+	IDA - Rua Dr. Albino Magalhães para Rua Artur Vital da Silva.	       
+	VOLTA - Rua Camaragibe para Rua Arsênio Fortes.
+			Rua Prof. José da Silveira Camerino para Rua Íris Alagoense.
+	-->	
+	<flow id="3.4450" begin="2100" end="5400" vehsPerHour="2" type="bus" departLane="best" from="37055971" to="37061722">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+	</flow>
+	<flow id="2.4500" begin="2100" end="5400" vehsPerHour="2" type="bus" departLane="best" from="49030944#2" to="47661751#0">
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+	</flow>
+	<flow id="2.4550" begin="2100" end="5400" vehsPerHour="2" type="bus" departLane="best" from="447568492#1" to="37022128">	
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+	</flow>	
+		
+	<!--
+	Linha 035 - Ouro Preto - Centro
+	Horários: 06:20 - 06:45 - 06:50
+	Sentido: IDA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+			 VOLTA - Rua Camaragibe para Centro (Fernandes Lima).
+	-->
+	<flow id="3.4600" begin="2100" end="5400" vehsPerHour="3" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->
+	</flow>
+	<flow id="2.4650" begin="2100" end="5400" vehsPerHour="3" type="bus" departLane="best" from="49030944#2" to="775830384">		
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+		
+	<!--
+	Linha 039 - Cleto Marques - Centro 
+	Horários: 06:20
+ 	Sentido: IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+			 VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso. 
+	 -->
+	<flow id="2.4700" begin="2100" end="5400" vehsPerHour="3" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.4750" begin="2100" end="5400" vehsPerHour="3" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->
+	</flow>
+	
+	<!--
+	Linha 058 - Fernão Velho - Centro
+	Horários: 06:20
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->	
+	<flow id="2.4800" begin="2400" end="5400" vehsPerHour="1" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.4850" begin="2400" end="5400" vehsPerHour="1" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->
+	</flow>	
+	
+	<!--
+	Linha 230 - Forene - Trapiche 
+	Horários: 06:20 - 06:45
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<flow id="2.4900" begin="2400" end="5400" vehsPerHour="2" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.4950" begin="2400" end="5400" vehsPerHour="2" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->					
+	</flow>
+	
+	
+	<!--
+	Linha 051 - Santos Dumont - Centro
+	Horários: 06:30
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<flow id="2.5000" begin="2400" end="5400" vehsPerHour="1" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.5050" begin="2400" end="5400" vehsPerHour="1" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->
+	</flow>
+	
+	<!-- 
+	Linha 102 - João Sampaio - Trapiche   (Corrigido no aplicativo Cittamobi)
+	Horários: 06:30
+	IDA - Rua Prof. José da Silveira Camerino para Rua Íris Alagoense.
+	VOLTA - Centro (Fernandes Lima) para Rua João Correia de Araújo (Rua do Retorno Rotary).
+			Avenida Mendonça Júnior (Rotary) para Rua Luiz Rizzo (SEM PONTO).
+	-->
+	<flow id="2.5100" begin="2400" end="5400" vehsPerHour="1" type="bus" departLane="best" from="447568492#1" to="37022128">	
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+	</flow>	
+	<flow id="3.5150" begin="2400" end="5400" vehsPerHour="1" type="bus" departLane="best" from="408074469#0" to="48484834">		
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+	</flow>		
+	<flow id="2.5200" begin="2400" end="5400" vehsPerHour="1" type="bus" departLane="best" from="240384794" to="53292419"/>
+	
+	
+	<!--
+	Linha 072 - Gama Lins - Colina - Ponta Verde 
+	Horários: 06:40
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<flow id="2.5250" begin="2700" end="5400" vehsPerHour="1" type="bus" departLane="best" from="gneE14" to="775830384">
+		<stop busStop="busStop_853222188#2_0_22" duration="15"/> <!-- Ponto FACIMA - Sentido Centro -->
+		<stop busStop="busStop_190347088#2_0_23" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Centro -->				
+		<stop busStop="busStop_286346394#1.261_0_26" duration="15"/> <!-- Ponto Equatorial - Sentido Centro -->
+		<stop busStop="busStop_286346394#8_0_28" duration="15"/> <!-- Ponto Casa Vieira - Sentido Centro -->
+		<stop busStop="busStop_745500848#6.28_0_31" duration="15"/> <!-- Ponto Quartel Exército - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31_0_32" duration="15"/> <!-- Ponto CEPA - Sentido Centro -->
+		<stop busStop="busStop_745500848#12.31.262_0_38" duration="15"/> <!-- Ponto IZP - Sentido Centro -->
+		<stop busStop="busStop_745500848#25.23_0_35" duration="15"/> <!-- Ponto Palato - Sentido Centro -->
+		<stop busStop="busStop_775830384_0_37" duration="15"/> <!-- Posto Jardins - Sentido Centro -->
+	</flow>
+	<flow id="3.5300" begin="2700" end="5400" vehsPerHour="1" type="bus" departLane="best" from="408074469#0" to="47663822#2.31">
+		<stop busStop="busStop_408074468.29_0_0" duration="15"/> <!-- Ponto Igreja Paz e Vida - Sentido Gruta -->
+		<stop busStop="busStop_52716256#1.23_0_2" duration="15"/> <!-- Ponto Hiper Bompreço - Sentido Gruta -->	
+		<stop busStop="busStop_52716256#9.23_0_4" duration="15"/> <!-- Ponto Diamantes - Sentido Gruta -->
+		<stop busStop="busStop_52716256#10.30_0_5" duration="15"/> <!-- Ponto CEPA - Sentido Gruta -->
+		<stop busStop="busStop_52716256#14.31_0_8" duration="15"/> <!-- Ponto Quarte Exército - Sentido Gruta -->
+		<stop busStop="busStop_745500846#0.29_0_9" duration="15"/>	<!-- Ponto Banco do Nordeste - Sentido Gruta -->
+		<stop busStop="busStop_745500846#1.29.152_0_11" duration="15"/> <!-- Ponto Hospital Veredas - Sentigo Gruta -->	
+			<!-- <stop busStop="busStop_745500846#1.29.152_0_12" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_745500846#6.192_0_15" duration="15"/> <!-- Ponto Equatorial - Sentido Gruta -->	
+		<stop busStop="busStop_286346393#3.30_0_17" duration="15"/> <!-- Ponto Big Bompreço Gruta - Sentido Gruta -->
+			<!-- <stop busStop="busStop_286346393#3.30_0_18" duration="15"/> --> <!-- Ponto Secundário Intermunicipal -->
+		<stop busStop="busStop_47663822#1_0_21" duration="15"/>	<!-- Ponto FACIMA - Sentido Gruta -->					
+	</flow>
+	
+	<!--
+	Linha 105 - Jardim Petrópolis - Trapiche - Terminal Salvador Lyra
+	Horários: NÃO TEM DAS 6H ÀS 6H59.
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<!--
+	<flow id="2.51" begin="0" end="5400" vehsPerHour="1" type="bus" departLane="best" from="gneE14" to="775830384"/>
+	<flow id="2.52" begin="0" end="5400" vehsPerHour="1" type="bus" departLane="best" from="408074469#0" to="47663822#2.31"/>
+	-->
+		
+	<!--
+	Linha 719 - Chã Nova - Ponta Verde
+	Horários: NÃO TEM DAS 6H ÀS 6H59.
+	IDA - Gruta (Fernandes Lima) para Centro (Fernandes Lima) Obs.: Todo o Percurso.
+	VOLTA - Centro (Fernandes Lima) para Gruta (Fernandes Lima) Obs.: Todo o Percurso.
+	-->
+	<!--
+	<flow id="2.107" begin="0" end="5400" vehsPerHour="5" type="bus" departLane="best" from="gneE14" to="775830384"/>
+	<flow id="2.108" begin="0" end="5400" vehsPerHour="5" type="bus" departLane="best" from="408074469#0" to="47663822#2.31"/>
+	-->	
+</routes>

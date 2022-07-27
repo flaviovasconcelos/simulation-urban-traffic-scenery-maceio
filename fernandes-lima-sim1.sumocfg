@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/sumoConfiguration.xsd">
+    <input>	
+        <net-file value="fernandes-lima-v118.v13.sim1.net.xml"/>
+		<!-- <net-file value="fernandes-lima-v118.v13.sim1.sem-faixa-azul.sim1.net.xml"/> -->
+		<!-- <net-file value="fernandes-lima-v118.v13.sim1.sem-semaforo-manual.sim1.net.xml"/> -->
+		<!-- <net-file value="fernandes-lima-v118.v13.sim1.sem-faixa-azul.sem-semaforo-manual.sim1.net.xml"/> -->
+		<additional-files value="fernandes-lima-v118.v2.add.xml"/>
+		<gui-settings-file value="fernandes-lima.settings.xml"/>		
+		<route-files value="fernandes-lima-v118.car.flow.sim9.rou.xml,fernandes-lima-v118.taxi.sim9.rou.xml,fernandes-lima-v118.bus.flow.sim9.rou.xml,fernandes-lima-v118.truck.sim9.rou.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="5400"/>
+		<!-- 1h30m -->
+    </time>
+	
+	<output>
+      <tripinfo-output value="output.tripinfo.out.xml"/> 	  
+	  <summary-output value="output.summary.out.xml"/> 	        
+	  <vehroute-output value="output.vehroute.out.xml"/>	  
+	  <!-- <fcd-output value="output.fcd.xml"/> -->
+	  <!-- <emission-output value="output.emission.out.xml"/> -->
+	  <seed value="1"/>
+    </output>
+		
+	<!--
+    <report>
+        <no-duration-log value="true"/>
+        <no-step-log value="true"/>		
+    </report>
+	-->
+	
+    <emissions>
+      <device.emissions.probability value="1.0" />
+    </emissions>
+	
+</configuration>

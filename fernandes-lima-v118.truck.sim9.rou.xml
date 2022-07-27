@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 11/23/21 09:57:48 by Eclipse SUMO duarouter Version 1.6.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    
+	<!-- TIPOS DE VEICULOS -->
+	<vType id="truck" vClass="truck" maxSpeed="60" color="70,130,180" minGap="2.3" carFollowModel="Krauss" speedFactor="1.2"/>
+	
+	<!-- ROTAS PARA CAMINHAO -->
+	<!-- SENTIDO Centro (Fernandes Lima) Obs.: Todo o Percurso. -->
+	<!-- <flow id="4.25" begin="0" end="5400" vehsPerHour="50" type="truck" departLane="best" departPos="free" from="gneE14" to="775830384" via="853222188#2 190347088#2"/> -->
+	<flow id="4.25" begin="0" end="5400" vehsPerHour="50" type="truck" departLane="best" departPos="free" departSpeed="max" from="gneE14" to="775830384" via="853222188#2 190347088#2"/>
+	<!-- SENTIDO Gruta (Fernandes Lima) Obs.: Todo o Percurso. -->
+	<flow id="5.75" begin="0" end="5400" vehsPerHour="50" type="truck" departLane="best" departPos="free" departSpeed="max" from="408074469#0" to="47663822#2.31"/>
+</routes>

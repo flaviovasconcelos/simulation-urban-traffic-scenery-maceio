@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 05/03/21 01:43:26 by Eclipse SUMO netedit Version 1.6.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\REDES\Desktop\Mestrado\Dissertacao\SUMO\map\fernandes-lima-20\fernandes-lima-v118.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\REDES\Desktop\Mestrado\Dissertacao\SUMO\map\fernandes-lima-20\fernandes-lima-v118.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="C:\Users\REDES\Desktop\Mestrado\Dissertacao\SUMO\map\fernandes-lima-20\fernandes-lima-v118.add.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="busStop_190347088#2_0_23" lane="190347088#2_0" startPos="106.00" endPos="148.00"/>
+    <busStop id="busStop_286346393#3.30_0_17" lane="286346393#3.30_0" startPos="22.00" endPos="64.00"/>
+    <busStop id="busStop_286346393#3.30_0_18" lane="286346393#3.30_0" startPos="85.00" endPos="100.00"/>
+    <busStop id="busStop_286346394#1.261_0_26" lane="286346394#1.261_0" startPos="10.00" endPos="38.00"/>
+    <busStop id="busStop_286346394#8_0_28" lane="286346394#8_0" startPos="14.00" endPos="56.00"/>
+    <busStop id="busStop_408074468.29_0_0" lane="408074468.29_0" startPos="30.00" endPos="58.00"/>
+    <busStop id="busStop_47663822#1_0_21" lane="47663822#1_0" startPos="10.00" endPos="25.00"/>
+    <busStop id="busStop_52716256#1.23_0_2" lane="52716256#1.23.76_0" startPos="81.00" endPos="109.00"/>
+    <busStop id="busStop_52716256#10.30_0_5" lane="52716256#10.30_0" startPos="12.00" endPos="54.00"/>
+    <busStop id="busStop_52716256#14.31_0_8" lane="52716256#14.31_0" startPos="448.00" endPos="463.00"/>
+    <busStop id="busStop_52716256#9.23_0_4" lane="52716256#9.23_0" startPos="34.00" endPos="49.00"/>
+    <busStop id="busStop_745500846#0.29_0_9" lane="745500846#0.29_0" startPos="36.00" endPos="60.00"/>
+    <busStop id="busStop_745500846#1.29.152_0_11" lane="745500846#1.29.152_0" startPos="25.00" endPos="67.00"/>
+    <busStop id="busStop_745500846#1.29.152_0_12" lane="745500846#1.29.152_0" startPos="90.00" endPos="105.00"/>
+    <busStop id="busStop_745500846#6.192_0_15" lane="745500846#6.192_0" startPos="19.00" endPos="47.00"/>
+    <busStop id="busStop_745500848#12.31.262_0_38" lane="745500848#12.31.262_0" startPos="90.00" endPos="105.00"/>
+    <busStop id="busStop_745500848#12.31_0_32" lane="745500848#12.31_0" startPos="98.00" endPos="140.00"/>
+    <busStop id="busStop_745500848#25.23_0_35" lane="745500848#25.23_0" startPos="7.00" endPos="35.00"/>
+    <busStop id="busStop_745500848#6.28_0_31" lane="745500848#6.28_0" startPos="30.00" endPos="45.00"/>
+    <busStop id="busStop_775830384_0_37" lane="775830384_0" startPos="66.00" endPos="81.00"/>
+    <busStop id="busStop_853222188#2_0_22" lane="853222188#2_0" startPos="45.00" endPos="60.00"/>
+	
+<!-- ************************ INTERSECAO - DESEMBARGADOR TENORIO - PALATO FAROL ************************************************************* -->
+<!-- FERNANDES LIMA - SENTIDO TABULEIRO -->
+<e1Detector id="0" lane="408074468.29_0" pos="+100" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="1" lane="408074468.29_1" pos="+100" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="2" lane="408074468.29_2" pos="+100" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="3" lane="408074468.29_3" pos="+100" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- FERNANDES LIMA - SENTIDO CENTRO -->
+<e1Detector id="4" lane="745500848#27.19_0" pos="+5" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="5" lane="745500848#27.19_1" pos="+5" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="6" lane="745500848#27.19_2" pos="+5" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="7" lane="745500848#27.19_3" pos="+5" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- FERNANDES LIMA - SENTIDO CENTRO - JOSE DE ALENCAR -->
+<e1Detector id="8" lane="28639939#0_0" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- JOSE DE ALENCAR - FERNANDES LIMA - SENTIDO CENTRO  -->
+<e1Detector id="9" lane="-28639939#0_0" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- DESEMBARGADOR TENORIO - FERNANDES LIMA - SENTIDO CENTRO  -->
+<e1Detector id="10" lane="53281545#2_0" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="11" lane="53281545#2_1" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+
+<!-- SENTIDO TABULEIRO -->
+<e1Detector id="12" lane="52716256#0_0" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="13" lane="52716256#0_1" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="14" lane="52716256#0_2" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="15" lane="52716256#0_3" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+
+<!-- SENTIDO CENTRO -->
+	<e1Detector id="110" lane="745500848#28_0" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="111" lane="745500848#28_1" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="112" lane="745500848#28_2" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="113" lane="745500848#28_3" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>	
+
+
+<!-- ************************ INTERSECAO - RUA MIGUEL PALMEIRA - CEPA ************************************************************* -->
+
+<!-- SENTIDO GRUTA -->
+<e1Detector id="16" lane="52716256#12_0" pos="+80" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="17" lane="52716256#12_1" pos="+80" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="18" lane="52716256#12_2" pos="+80" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="19" lane="52716256#12_3" pos="+80" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- SENTIDO CENTRO -->
+	<e1Detector id="20" lane="745500848#12_0" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="21" lane="745500848#12_1" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="22" lane="745500848#12_2" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="23" lane="745500848#12_3" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- SENTIDO TABULEIRO -->
+<e1Detector id="24" lane="52716256#13_0" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="25" lane="52716256#13_1" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="26" lane="52716256#13_2" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- <e1Detector id="27" lane="52716256#13_3" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/> -->
+<!-- SENTIDO CENTRO -->
+	<e1Detector id="28" lane="745500848#11.72_0" pos="-8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="29" lane="745500848#11.72_1" pos="-8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="30" lane="745500848#11.72_2" pos="-8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="31" lane="745500848#11.72_3" pos="-8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>	
+
+<!-- FERNANDES LIMA - SENTIDO CENTRO - RUA MIGUEL PALMEIRA -->
+<e1Detector id="150" lane="53283046#0_0" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="151" lane="53283046#0_1" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	
+<!-- FERNANDES LIMA - SENTIDO GRUTA - RUA MIGUEL PALMEIRA -->
+<e1Detector id="152" lane="192483968#1_0" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="153" lane="192483968#1_1" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+
+
+<!-- *********************** INTERSECAO AVENIDA ROTARY ******************************************************************** -->	
+<!-- SENTIDO TABULEIRO -->
+<e1Detector id="32" lane="52716256#17_0" pos="+220" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="33" lane="52716256#17_1" pos="+220" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="34" lane="52716256#17_2" pos="+220" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- <e1Detector id="35" lane="52716256#17_3" pos="+80" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/> -->
+<!-- SENTIDO CENTRO -->
+	<e1Detector id="36" lane="745500848#0_0" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="37" lane="745500848#0_1" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="38" lane="745500848#0_2" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<!-- <e1Detector id="39" lane="745500848#0_3" pos="+7" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/> -->
+<!-- SENTIDO TABULEIRO -->
+<e1Detector id="40" lane="745500846#0_0" pos="+8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="41" lane="745500846#0_1" pos="+8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="42" lane="745500846#0_2" pos="+8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="43" lane="745500846#0_3" pos="+8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- SENTIDO CENTRO -->
+	<e1Detector id="44" lane="286346398#1_0" pos="-8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="45" lane="286346398#1_1" pos="-8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="46" lane="286346398#1_2" pos="-8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<!-- <e1Detector id="47" lane="286346398#1_3" pos="-8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>	-->
+
+<!-- AVENIDA ROTARY - FERNANDES LIMA -->
+	<e1Detector id="47" lane="240384794_0" pos="-8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="48" lane="240384794_1" pos="-8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="49" lane="240384794_2" pos="-8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	
+	
+<!-- *********************** INTERSECAO TEREZA DE AZEVEDO - CASA VIEIRA ******************************************************************** -->	
+<!-- SENTIDO TABULEIRO -->
+<e1Detector id="50" lane="745500846#1_0" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="51" lane="745500846#1_1" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="52" lane="745500846#1_2" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- <e1Detector id="53" lane="745500846#1_3" pos="+80" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/> -->
+<!-- SENTIDO CENTRO -->
+	<e1Detector id="54" lane="286346394#8_0" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="55" lane="286346394#8_1" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="56" lane="286346394#8_2" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="57" lane="286346394#8_3" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- SENTIDO TABULEIRO -->
+<e1Detector id="58" lane="745500846#0.29.113_0" pos="+8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="59" lane="745500846#0.29.113_1" pos="+8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="60" lane="745500846#0.29.113_2" pos="+8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="61" lane="745500846#0.29.113_3" pos="+8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- SENTIDO CENTRO -->
+	<e1Detector id="62" lane="286346398#0_0" pos="+8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="63" lane="286346398#0_1" pos="+8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="64" lane="286346398#0_2" pos="+8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="65" lane="286346398#0_3" pos="+8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- TEREZA DE AZEVEDO - FERNANDES LIMA - ENTRADA-->
+	<e1Detector id="66" lane="199263544_0" pos="-8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="67" lane="199263544_1" pos="-8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="68" lane="199263544_2" pos="-8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- TEREZA DE AZEVEDO - FERNANDES LIMA - SAÍDA -->
+	<e1Detector id="69" lane="53292659#0_0" pos="+8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="70" lane="53292659#0_1" pos="+8" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+
+<!-- *********************** INTERSECAO RUA ABELARDO PONTES DE LIMA ******************************************************************** -->	
+<!-- SENTIDO TABULEIRO -->
+<e1Detector id="71" lane="286346396_0" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="72" lane="286346396_1" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="73" lane="286346396_2" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- <e1Detector id="74" lane="286346396_3" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/> -->
+<!-- SENTIDO CENTRO -->
+	<e1Detector id="74" lane="286346394#1_0" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="75" lane="286346394#1_1" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="76" lane="286346394#1_2" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<!-- <e1Detector id="77" lane="286346394#0_3" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/> -->
+
+<!-- SENTIDO TABULEIRO -->
+<e1Detector id="78" lane="286346393#0_0" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="79" lane="286346393#0_1" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="80" lane="286346393#0_2" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- <e1Detector id="81" lane="286346393#0_3" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/> -->
+	
+<!-- SENTIDO CENTRO -->
+	<e1Detector id="82" lane="286346394#0.33_0" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="83" lane="286346394#0.33_1" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="84" lane="286346394#0.33_2" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="85" lane="286346394#0.33_3" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	
+<!-- RUA ABELARDO PONTES DE LIMA - FERNANDES LIMA - ENTRADA-->
+	<e1Detector id="86" lane="583371595#1_0" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="87" lane="583371595#1_1" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	
+<!-- *********************** INTERSECAO RUA CAMARAGIBE ******************************************************************** -->	
+<!-- SENTIDO TABULEIRO -->
+<e1Detector id="88" lane="286346393#6_0" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="89" lane="286346393#6_1" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="90" lane="286346393#6_2" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<!-- <e1Detector id="91" lane="286346396#6_3" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/> -->
+<!-- SENTIDO CENTRO -->
+	<e1Detector id="92" lane="190347088#0_0" pos="+20" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="93" lane="190347088#0_1" pos="+20" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="94" lane="190347088#0_2" pos="+20" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<!-- <e1Detector id="95" lane="190347088#0_3" pos="+20" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/> -->
+
+<!-- SENTIDO TABULEIRO -->
+
+<e1Detector id="96" lane="47663822#1_0" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="97" lane="47663822#1_1" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+<e1Detector id="98" lane="47663822#1_2" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+
+<!-- <e1Detector id="99" lane="47663822#1_3" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/> -->
+	
+<!-- SENTIDO CENTRO -->
+	<e1Detector id="100" lane="853222188#2_0" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="101" lane="853222188#2_1" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="102" lane="853222188#2_2" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<!-- <e1Detector id="103" lane="853222188#2_3" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/> -->
+	
+<!-- RUA PARALELA - FERNANDES LIMA - SAÍDA-->
+	<e1Detector id="104" lane="53187714#0_0" pos="+140" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="105" lane="53187714#0_1" pos="+140" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>	
+	
+<!-- RUA CAMARAGIBE - FERNANDES LIMA - SENTIDO CENTRO -->
+	<e1Detector id="106" lane="49030944#2_0" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="107" lane="49030944#2_1" pos="-10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="108" lane="-49030944#2_0" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+	<e1Detector id="109" lane="-49030944#2_1" pos="+10" freq="30" file="estatistica-volumetrica.out" friendlyPos="x"/>
+</additional>
